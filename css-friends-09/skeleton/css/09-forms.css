@@ -1,1 +1,61 @@
 /* PHASE 9: Forms */
+.content-main {
+
+}
+
+.post {
+  float: left;
+  background-color: #eee;
+  padding: 10px;
+  width: 83%;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  font-weight: 0;
+}
+
+.submit-button {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 1px black;
+  display: inline;
+  margin-left: 10px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+strong:hover {
+  font-weight: 700;
+  color: red;
+}
+
+textarea {
+  /*width: 90%;*/
+}
+
+label {
+  margin: 10px;
+  font-weight: 700;
+}
+
+label input {
+  font-weight: 0;
+}
+
+#post-img {
+  float: left;
+}
