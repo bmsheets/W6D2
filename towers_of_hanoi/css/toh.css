@@ -37,3 +37,11 @@ figure {
 .disc0 {
   width: 40%;
 }
+
+.tower:hover {
+  border-bottom: 10px solid blue;
+}
+
+.selected {
+  border-bottom: 10px solid red;
+}
