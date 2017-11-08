@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+
+figure {
+  text-align:center;
+}
+
+.tower {
+  /*background-color: blue;*/
+  width: 150px;
+  height: 160px;
+  border-bottom: 10px solid black;
+  display: inline-block;
+  margin: 10px;
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+}
+
+.disc {
+  text-align: center;
+  background-color: gray;
+  border-radius: 20px;
+  height: 40px;
+  margin: 10px auto;
+
+}
+
+.disc2 {
+  width: 100%;
+}
+.disc1 {
+  width: 70%;
+}
+
+.disc0 {
+  width: 40%;
+}
