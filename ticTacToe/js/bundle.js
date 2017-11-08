@@ -112,6 +112,14 @@ class View {
       const row = $cell.data("row");
       const col = $cell.data("col");
       that.game.playMove([parseInt(row), parseInt(col)]);
+      if (that.game.isOver()) {
+        if (that.game.winner() === null) {
+          that.$el.append($(`<h2>this is why tic tac toe is a silly game...</h2>`));
+        } else {
+          that.$el.append($(`<h2>${that.game.winner()} has won!</h2>`));
+        }
+        $cells.off("click");
+      }
       $cell.css("background-color", "white");
       if (that.xturn) {
         $cell.text("X");
@@ -135,12 +143,6 @@ class View {
         $grid.append($cell);
       }
     }
-    const $cells = $('.cell');
-    $cells.on("mouseover", function(event) {
-      const $cell = $(event.currentTarget);
-      console.log($cell);
-      // event.currentTarget.css("background-color", "yellow");
-    });
   }
 }
 
